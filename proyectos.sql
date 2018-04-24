@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-04-2018 a las 00:55:44
+-- Tiempo de generación: 25-04-2018 a las 00:56:06
 -- Versión del servidor: 10.1.31-MariaDB
 -- Versión de PHP: 7.2.4
 
@@ -45,7 +45,8 @@ CREATE TABLE `principal` (
 
 INSERT INTO `principal` (`Id`, `Nombre_proyecto`, `Nombre_responsable`, `Descripcion`, `Prioridad`, `Points`, `Tipo`, `Fecha_Creacion`) VALUES
 (1, 'Principiante', 'Jonathan Salazar', 'El proyecto, se trata de realizar una información acerca de un expediente clinico y formatear las bases de datos de las clinica para que no quede huella mia.', 3, 2, 'Planeado', '2018-04-23'),
-(2, 'Sintesis', 'Jonathan Salazar', 'Realizar una sintesis del proyecto', 3, 1, 'Bug', '2018-04-26');
+(2, 'Sintesis', 'Jonathan Salazar', 'Realizar una sintesis del proyecto', 3, 1, 'Bug', '2018-04-26'),
+(3, 'Proyecto Nazi', 'Jaime Ramirez', 'Investigaremos en la base de datos del gobierno todos los secretos que este oculta.', 2, 3, 'Planeado', '2018-04-02');
 
 --
 -- Índices para tablas volcadas
@@ -65,7 +66,7 @@ ALTER TABLE `principal`
 -- AUTO_INCREMENT de la tabla `principal`
 --
 ALTER TABLE `principal`
-  MODIFY `Id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `Id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

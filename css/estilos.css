@@ -1,11 +1,76 @@
 body h3{
   font-size: 23px;
-  font-family: "Verdana";
+  font-family: 'Verdana';
+  text-align: center;
+}
+
+body h4{
+  font-size: 16px;
+  font-family: 'Verdana';
+  text-align: center;
+}
+
+label{
+    font-size: 17px;
+    font-family: 'Verdana';
+    color: #2E2E2E;
+    text-align: center;
+    width: 100%;
+}
+
+table td{
+  border: 2px solid black;
+}
+
+table{
+  width: 100%;
+}
+
+#nuevo_proyec{
+  border-radius: 5px;
+  padding: 10px 7px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  margin: 5px;
+  font-size: 15px;
+  font-family: 'Verdana';
+  float: right;
+}
+
+a{
+  border-radius: 5px;
+  padding: 10px 7px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  margin: 5px;
+  font-size: 15px;
+  font-family: 'Verdana';
+  text-align: center;
+}
+
+div{
   text-align: center;
 }
 
 input{
-  font-size: 18px;
-  font-style: "Verdana";
+  font-size: 14px;
+  font-family: 'Verdana';
+}
+
+#enviar{
+  float: right;
+}
+
+#regresar_inicio{
+  border-radius: 5px;
+  padding: 10px 7px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  margin: 5px;
+  font-size: 15px;
+  font-family: 'Verdana';
   float: right;
 }
