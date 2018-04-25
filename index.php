@@ -24,7 +24,7 @@
       $con = mysqli_connect("localhost","root","");
       mysqli_select_db($con, "proyectos")or die("No se pudo conectar con la base de datos.");
 
-      $re = mysqli_query($con, "SELECT * FROM `principal`")or die("No se puede conectar con la tabla");
+      $re = mysqli_query($con, "SELECT * FROM `proyecto`")or die("No se puede conectar con la tabla");
       while ($f=mysqli_fetch_array($re)) {
     ?>
     <table>

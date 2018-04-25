@@ -20,7 +20,7 @@
         <label for="nombre"><strong>Nombre: <strong></label>
           <input required name="nombre" type="text" placeholder="Nombre del proyecto"></input>
         <br><br>
-        <label for="responsable"><strong>Responsable: <strong></label>
+        <!--<label for="responsable"><strong>Responsable: <strong></label>
           <select name="responsable">
             <option value="jonathan salazar">Jonathan Salazar</option>
             <option value="pedro juarez">Pedro Juárez</option>
@@ -63,16 +63,13 @@
         <br><br>
         <input required name="activo" type="checkbox"></input>
           <label for="activo"><strong>Activo: <em>Marca el botón para hacerlo activo</em></strong></label>
+        <br>-->
+        <input id="enviar" type="submit" name="enviar" value="Enviar datos"></input>
+        <a href="./index.php" id="regresar_inicio"><strong>Volver a Inicio</strong></a>
       </form>
     </div>
-    <br>
-
-    <input id="enviar" type="submit" name="enviar" value="Enviar datos"></input>
-    <a href="./index.php" id="regresar_inicio"><strong>Volver a Inicio</strong></a>
-
   </body>
 
   <script>
   </script>
-
 </html>
