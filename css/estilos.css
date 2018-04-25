@@ -24,6 +24,7 @@ table td{
 
 table{
   width: 100%;
+  text-align: center;
 }
 
 #nuevo_proyec{
@@ -36,6 +37,11 @@ table{
   font-size: 15px;
   font-family: 'Verdana';
   float: right;
+}
+
+#resultados{
+  margin-top: 12px;
+  
 }
 
 a{
@@ -61,6 +67,26 @@ input{
 
 #enviar{
   float: right;
+  border-radius: 5px;
+  padding: 10px 7px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  margin: 5px;
+  font-size: 15px;
+  font-family: 'Verdana';
+}
+
+#guardar{
+  float: right;
+  border-radius: 5px;
+  padding: 10px 7px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  margin: 5px;
+  font-size: 15px;
+  font-family: 'Verdana';
 }
 
 #regresar_inicio{
@@ -74,3 +100,14 @@ input{
   font-family: 'Verdana';
   float: right;
 }
+ #cancelar{
+   border-radius: 5px;
+   padding: 10px 7px;
+   text-decoration: none;
+   color: #fff;
+   background-color: #333;
+   margin: 5px;
+   font-size: 15px;
+   font-family: 'Verdana';
+   float: right;
+ }

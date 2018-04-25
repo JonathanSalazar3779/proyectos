@@ -32,7 +32,7 @@
           <td><h4><?php echo $f['Id'];?></h4></td>
           <td><h4><?php echo $f['Nombre_proyecto']?></h4></td>
           <td><h4><?php echo $f['Fecha_Creacion']?></h4></td>
-          <td><a href="./ver_proyecto.php?id=<?php echo $f['id'];?>"><strong>Ver Proyecto</strong></a></td>
+          <td><a href="ver_proyecto.php?id=<?php echo $f['Id'];?>"><strong>Ver Proyecto</strong></a></td>
         </tr>
       </table>
       <?php
