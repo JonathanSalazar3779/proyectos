@@ -27,11 +27,12 @@
     $re = mysqli_query($con, "SELECT * FROM `proyecto` WHERE `Id`=".$_GET['id'])or die(mysqli_error());
     while ($f=mysqli_fetch_array($re)) {
     ?>
-      <h4><?php echo $f['Nombre_proyecto'];?></h4>
+      <h4 style="margin-top: 20px"><?php echo $f['Nombre_proyecto'];?></h4>
 
       <div id="resultados"></div>
 
       <script>
+
         datosBD = [
           ['<?php echo ($f['Id']);?>','<?php echo ($f['Nombre_proyecto']); ?>',
             '<?php echo ($f['Nombre_responsable']); ?>','<?php echo ($f['Descripcion']); ?>', '<?php  echo ($f['Prioridad']);?>',
@@ -45,24 +46,30 @@
           rowHeaders: true,
           columns: [
             {type: 'numeric'},
+
             {},
+
             //para un combo box
             {type: 'dropdown',
               source: ['Jonathan Salazar', 'Sebastian Elvira', 'Monica Naranjo']
             },
+
             {},
+
             {type: 'numeric'},
+
             {type: 'dropdown',
               source: ['1','3','5','7','9','11','13']
             },
+
             //para un combo box
             {type: 'dropdown',
               source: ['Planeado', 'No planeado', 'Bug', 'Otro']
             },
+
             {type: 'date',
               dateFormat: "DD/MM/YYYY",
               correctFormat: true,
-              defaultDate: "01/05/2018",
               allowEmpty: false,
               //para configuracion avanzada del día
               datePickerConfig:{
@@ -72,7 +79,12 @@
                 numberOfMonths: 4,
               }
             },
-            {type: 'checkbox'}
+
+            {type: 'checkbox',
+              //1, para si activada, 2 para no activada!!!
+              checkedTemplate: '1',
+              uncheckedTemplate: '0'
+            }
           ]
         };
 
@@ -81,17 +93,24 @@
 
         <?php
           }
-          /*
-          $f['Id'],
-          $f['Nombre_proyecto'], $f['Nombre_responsable'],
-          $f['Descripcion'], $f['Prioridad'], $f['Points'],
-          $f['Tipo'], $f['Fecha_Creacion'], $f['Activo']*/
         ?>
+
+        if (!datosBD) {
+          actualizar();
+        }
 
         </script>
 
         <a href="index.php" id="cancelar">Cancelar</a>
-        <input onclick="" value="Guardar" id="guardar"></input>
+        <a href="index.php" onclick="actualizar()" id="guardar">Guardar</a>
+
+        <?php
+
+        //falta investigar ¿Se podrá?
+        function actualizar(){
+          mysqli_query("UPDATE 'proyecto' SET 'Nombre_proyecto' = WHERE 'proyecto'.'Id'=".$_GET['id']);
+        }
+        ?>
 
   </body>
 </html>

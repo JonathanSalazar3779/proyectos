@@ -11,20 +11,22 @@ body h4{
 }
 
 label{
-    font-size: 17px;
-    font-family: 'Verdana';
-    color: #2E2E2E;
-    text-align: center;
-    width: 100%;
+  font-size: 17px;
+  font-family: 'Verdana';
+  color: #2E2E2E;
+  text-align: center;
 }
 
 table td{
   border: 2px solid black;
+  padding-right: -10px;
+  padding-left: -10px;
+  padding-top: -10px;
+  padding-bottom: -10px;
 }
 
 table{
   width: 100%;
-  text-align: center;
 }
 
 #nuevo_proyec{
@@ -68,11 +70,11 @@ input{
 #enviar{
   float: right;
   border-radius: 5px;
-  padding: 10px 7px;
+  padding: 10px 5px;
   text-decoration: none;
   color: #fff;
   background-color: #333;
-  margin: 5px;
+  margin: 1px;
   font-size: 15px;
   font-family: 'Verdana';
 }
@@ -80,34 +82,34 @@ input{
 #guardar{
   float: right;
   border-radius: 5px;
-  padding: 10px 7px;
+  padding: 10px 5px;
   text-decoration: none;
   color: #fff;
   background-color: #333;
-  margin: 5px;
+  margin: 1px;
   font-size: 15px;
   font-family: 'Verdana';
 }
 
 #regresar_inicio{
   border-radius: 5px;
-  padding: 10px 7px;
+  padding: 12px 5px;
   text-decoration: none;
   color: #fff;
   background-color: #333;
-  margin: 5px;
+  margin: 1px;
   font-size: 15px;
   font-family: 'Verdana';
   float: right;
 }
  #cancelar{
    border-radius: 5px;
-   padding: 10px 7px;
+   padding: 12px 5px;
    text-decoration: none;
    color: #fff;
    background-color: #333;
-   margin: 5px;
+   margin: 1px;
    font-size: 15px;
    font-family: 'Verdana';
    float: right;
- }
+}

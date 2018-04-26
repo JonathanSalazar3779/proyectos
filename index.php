@@ -11,7 +11,7 @@
     <h3>Proyectos..!!</h3>
     <a href="./nuevo_proyecto.php" id="nuevo_proyec"><strong>Nuevo Proyecto</strong></a>
     <table style="margin-top: 7%; margin-bottom: 1%">
-      <tr>
+      <tr style="text-align: center;">
         <th style="font-family: 'Comic Sans'; font-size: 23px; color:MediumSeaGreen;">Id</th>
         <th style="font-family: 'Comic Sans'; font-size: 23px; color:MediumSeaGreen;">Nombre del Proyecto</th>
         <th style="font-family: 'Comic Sans'; font-size: 23px; color:MediumSeaGreen;">Fecha de Creación</th>
@@ -28,8 +28,8 @@
       while ($f=mysqli_fetch_array($re)) {
     ?>
     <table>
-        <tr>
-          <td><h4><?php echo $f['Id'];?></h4></td>
+        <tr style="text-align: center;">
+          <td><h4 style="color: #0404B4"><?php echo $f['Id'];?></h4></td>
           <td><h4><?php echo $f['Nombre_proyecto']?></h4></td>
           <td><h4><?php echo $f['Fecha_Creacion']?></h4></td>
           <td><a href="ver_proyecto.php?id=<?php echo $f['Id'];?>"><strong>Ver Proyecto</strong></a></td>

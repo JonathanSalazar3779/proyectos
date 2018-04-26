@@ -10,6 +10,6 @@ if (isset($_POST['nombre']) && !empty($_POST['nombre'])) {
 
 }
 else {
-  echo "<h3>Verifica los datos, porfavor.</h3>";
+  echo "<h3>Verifica los datos, o reportalo con el programador porfavor.</h3>";
 }
 ?>

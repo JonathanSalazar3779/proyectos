@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 26-04-2018 a las 00:56:40
+-- Tiempo de generación: 27-04-2018 a las 00:45:26
 -- Versión del servidor: 10.1.31-MariaDB
 -- Versión de PHP: 7.2.4
 
@@ -65,7 +65,7 @@ CREATE TABLE `proyecto` (
 --
 
 INSERT INTO `proyecto` (`Id`, `Nombre_proyecto`, `Nombre_responsable`, `Descripcion`, `Prioridad`, `Points`, `Tipo`, `Fecha_Creacion`, `Activo`) VALUES
-(1, 'Jonathan', 'Sebastian Elvira', 'la cancion es mia', 2, 5, 'Planeado', '2018-04-26', 1),
+(1, 'Jonathan', 'Sebastian Elvira', 'La cancion es mia', 2, 5, 'Planeado', '2018-04-26', 1),
 (2, 'Resumen', 'Jonathan Salazar', 'Realizar el resumen', 3, 7, 'Bug', '2018-04-07', 0),
 (3, 'Declaraciones', 'Roberto Ortiz', 'Declaraciones anuales de la empresa', 3, 9, 'No planeado', '2018-04-30', 1);
 
