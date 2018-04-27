@@ -43,7 +43,6 @@ table{
 
 #resultados{
   margin-top: 12px;
-
 }
 
 a{
@@ -102,6 +101,7 @@ input{
   font-family: 'Verdana';
   float: right;
 }
+
  #cancelar{
    border-radius: 5px;
    padding: 12px 5px;

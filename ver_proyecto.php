@@ -27,12 +27,12 @@
     $re = mysqli_query($con, "SELECT * FROM `proyecto` WHERE `Id`=".$_GET['id'])or die(mysqli_error());
     while ($f=mysqli_fetch_array($re)) {
     ?>
+
       <h4 style="margin-top: 20px"><?php echo $f['Nombre_proyecto'];?></h4>
 
       <div id="resultados"></div>
 
       <script>
-
         datosBD = [
           ['<?php echo ($f['Id']);?>','<?php echo ($f['Nombre_proyecto']); ?>',
             '<?php echo ($f['Nombre_responsable']); ?>','<?php echo ($f['Descripcion']); ?>', '<?php  echo ($f['Prioridad']);?>',
@@ -76,7 +76,7 @@
                 //primer día de la semana
                 firstDay: 0, //domingo, lunes = 1
                 showWeekNumber: true,
-                numberOfMonths: 4,
+                numberOfMonths: 4
               }
             },
 
@@ -92,25 +92,43 @@
         tblExcel.render();
 
         <?php
+            //La idea general es guardar en variables el contenido del handsontable
+            //para que después manipularlo para poder ahora sí, hacer una consulta en sql
+            //de tipo "UPDATE" y así se puedan gaurdar os nuevos datos ya actualizados
+
+            //Otra sería explorar la opción de EditorManager del Handsontable
+
+            //$id = $f['Id'];
+            //$nombre = $f['Nombre_proyecto'];
+            //$responsable = $f['Nombre_responsable'];
+            //$fecha = $f['Fecha_Creacion'];
+            //$desc = $f['Descripcion'];
+            //$prioridad = $f['Prioridad'];
+            //$points = $f['Points'];
+            //$tipo = $f['Tipo'];
+            //$activo = $f['Activo'];
           }
         ?>
-
-        if (!datosBD) {
-          actualizar();
-        }
 
         </script>
 
         <a href="index.php" id="cancelar">Cancelar</a>
         <a href="index.php" onclick="actualizar()" id="guardar">Guardar</a>
 
-        <?php
+        <script type="text/javascript">
+        //La funcion si sirve... bueno, con alert pero si la reconoce
+          function actualizar(){
+            //No creo que haga algo, estamos guardando el mismo elemento y actuaizandolo es el mismo
 
-        //falta investigar ¿Se podrá?
-        function actualizar(){
-          mysqli_query("UPDATE 'proyecto' SET 'Nombre_proyecto' = WHERE 'proyecto'.'Id'=".$_GET['id']);
-        }
-        ?>
+            //$con2 = mysqli_connect("localhost","root","", "proyectos");
+            //mysqli_query($con2, "UPDATE 'proyecto' SET 'Nombre_proyecto' = '$nombre' WHERE 'proyecto'.'Id' = '$id'");
 
+            //Aquí poder incrustrar propiedades de Handsontable para poder guardar los datos en la BD
+            //var obj1 = new Handsontable.EditorManager();
+
+            //probar funcionamiento de la función
+            //alert('Gracias!!..');
+          }
+        </script>
   </body>
 </html>
